@@ -11,12 +11,32 @@ from tqdm import tqdm # progress bar
 
 # Question 2
 def fibonacci_recursive(n):
-    pass
+    '''
+    
+    '''
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    
+    return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+    return fib
 
 
 # Question 2
 def fibonacci_iter(n):
-    pass
+    '''
+    return the n-th number (an integer) of Fibonacci sequence
+    '''
+    a = 0
+    b = 1
+    for i in range(n-1):
+        c = a + b
+        a = b
+        b = c
+
+    return b
 
 
 # Question 3
